@@ -8,7 +8,7 @@ var fs = require('fs');
 var _data = require('./lib/data');
 
 
-_data.create('test','newFile',{'foo':'bar'},function(err,data){
+_data.create('test','newFile',{'foo':'bar'},function(err){
     console.log('File creation callback response: '+err);
 });
 
