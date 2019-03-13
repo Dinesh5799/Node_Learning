@@ -8,10 +8,21 @@ var fs = require('fs');
 var _data = require('./lib/data');
 
 
-_data.create('test','newFile',{'foo':'bar'},function(err){
+/*_data.create('test','newFile',{'foo':'bar'},function(err){
     console.log('File creation callback response: '+err);
-});
+});*/
 
+/*_data.read('test','newFile',function(err,data){
+    console.log('File creation callback response: '+err+" Data: "+data);
+});*/
+
+/*_data.update('test','newFile',{'color':'red'},function(err){
+    console.log('File creation callback response: '+err);
+});*/
+
+/*_data.delete('test','newFile',function(err){
+    console.log('File creation callback response: '+err);
+});*/
 
 var httpServer = http.createServer(function(req,res){
     UnifiedServer(req,res);
